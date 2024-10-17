@@ -1,0 +1,12 @@
+venv
+.venv
+
+.env
+
+.git
+
+db.sqlite
+
+.idea
+.vscode
+
