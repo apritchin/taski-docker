@@ -22,9 +22,9 @@ services:
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static_volume:/frontend_static
-# Добавляем новый контейнер: gateway.
   gateway:
     image: apritchin/taski_gateway:latest
+    env_file: .env
     volumes:
       - static_volume:/staticfiles/
     ports:
